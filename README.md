@@ -52,5 +52,5 @@ in a live environment.
   - Calculate the balance for all accounts
 
 ## Working Output
-![Sample Output](https://github.com/sluchacha/acmeApp/Sample%20Output.PNG)
+![Sample Output](https://github.com/sluchacha/acmeApp/blob/master/Sample%20Output.png)
 

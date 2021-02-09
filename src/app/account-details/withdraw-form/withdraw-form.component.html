@@ -1,0 +1,46 @@
+<div class="modal-header text-white bg-success">
+    <h4 class="modal-title pull-left" id="my-modal-title">Account Withdrawal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="onCancel()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form [formGroup]="itemform" autocomplete="off" novalidate>
+        <div class="form-group row">
+            <div class="col-md-6">
+                <label>Account Type : </label> 
+            </div>
+            <div class="col-md-6">
+                <label>{{item.account_type | titlecase}}</label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-6">
+                <label>Account Number : </label> 
+            </div>
+            <div class="col-md-6">
+                <label>{{item.account_number}}</label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-6">Balance:</div>
+            <div class="col-md-6">{{item.balance}}</div>
+        </div>
+        <div *ngIf="item.account_type ==='cheque'" class="form-group row">
+            <div class="col-md-6">Overdraft Limit:</div>
+            <div class="col-md-6">{{item?.overdraft_limit}}</div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-6">
+                <label>Amount to Withdraw:</label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" class="form-control" formControlName="amount" required>
+            </div>
+        </div>   
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" [disabled]="itemform.invalid" (click)="onSubmit()">Submit</button>
+    <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+  </div>

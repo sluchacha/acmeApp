@@ -1,27 +1,56 @@
-# AcmeApp
+# AcmeApp - small part of a banking system
+Front-end Developer Assessment (ABC)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+## Running the project
+Ensure you are in the acmeApp directory.
+Run `npm start` or `ng serve -o` from your terminal. This will open the application on your default web browser.
 
-## Development server
+Alternatively
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-## Code scaffolding
+## Data source
+This project is dependent on having the api server running on : http://localhost:8080/api/accounts
+Download API Server from : https://github.com/cibfrontend/mock-api-server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Languages
+Angular 11
+Typescript
+Bootstrap 4
+HTML5
+CSS
+IDE used: Visual Studio Code
 
-## Build
+## TASK
+You are writing a small part of a banking system for Acme Bank:
+  - Acme bank runs only 2 types of accounts, a Savings and Current account.
+  - Most of the behaviour in these 2 types of accounts is very similar
+  - For the purpose of this exercise, we will not look at all the functionality, we will only implement the “withdraw” and “balance”.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Savings Account:
+A savings account must have a minimum balance of greater than 0 to
+perform a withdraw
 
-## Running unit tests
+## Current Account:
+A current account can have an overdraft limit (the maximum overdraft
+limit allowed on a current account by Acme bank is R500.00
+This means that a current account can have both positive and negative for
+withdraw.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Implementation guidelines:
+Your job is to write a basic front-end implementation of withdraw and
+balance. The code needs to work correct at a basic level. It does not
+have to be 100% perfect in terms of catering for live environment.
+Please feel free to comment areas that you may implement in more detail
+in a live environment.
 
-## Running end-to-end tests
+## Business Rules
+  - One cannot withdraw more than the balance on savings accounts
+  - The maximum overdraft limit allowed on current account is R500
+  - Display alert(‘Success’) on withdraw button click
+  - Display inactive withdraw button e.g. saving account equals -R20.00
+  - Calculate the balance for all accounts
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Sample Output
+![Sample Output](https://github.com/sluchacha/acmeApp/Sample%20Output.png)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

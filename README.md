@@ -1,5 +1,5 @@
 # AcmeApp - small part of a banking system
-Front-end Developer Assessment (ABC)
+Front-end Developer Assessment (ABSA)
 
 ## Running the project
 Ensure you are in the acmeApp directory.
@@ -10,16 +10,16 @@ Alternatively
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Data source
-This project is dependent on having the api server running on : http://localhost:8080/api/accounts
+This project is dependent on having the api server running on : http://localhost:8080/api/accounts.
 Download API Server from : https://github.com/cibfrontend/mock-api-server
 
 ## Languages
-Angular 11
-Typescript
-Bootstrap 4
-HTML5
-CSS
-IDE used: Visual Studio Code
+  - Angular 11
+  - Typescript
+  - Bootstrap 4
+  - HTML5
+  - CSS
+  - IDE used: Visual Studio Code
 
 ## TASK
 You are writing a small part of a banking system for Acme Bank:
@@ -51,6 +51,6 @@ in a live environment.
   - Display inactive withdraw button e.g. saving account equals -R20.00
   - Calculate the balance for all accounts
 
-## Sample Output
-![Sample Output](https://github.com/sluchacha/acmeApp/Sample%20Output.png)
+## Working Output
+![Sample Output](https://github.com/sluchacha/acmeApp/Sample%20Output.PNG)
 

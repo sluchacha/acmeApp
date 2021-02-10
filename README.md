@@ -3,6 +3,9 @@ Front-end Developer Assessment (ABSA)
 
 ## Running the project
 Ensure you are in the acmeApp directory.
+
+Install the dependencies using the command `npm install` from your terminal.
+
 Run `npm start` or `ng serve -o` from your terminal. This will open the application on your default web browser.
 
 Alternatively

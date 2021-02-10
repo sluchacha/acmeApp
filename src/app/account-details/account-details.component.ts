@@ -57,8 +57,8 @@ export class AccountDetailsComponent implements OnInit {
 
     let totalAmount:number = 0;
     for(let i=0;i<accounts.length;i++){
-      let x:number = parseFloat(accounts[i].getBalance().toString());
-      totalAmount = totalAmount + x;
+      let x:number = Number(accounts[i].getBalance());// parseFloat(accounts[i].getBalance().toString());
+      totalAmount += x;
     }
     return totalAmount;
   }

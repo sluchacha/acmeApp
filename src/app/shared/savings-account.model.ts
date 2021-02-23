@@ -6,5 +6,13 @@ export class SavingsAccount extends BankAccount {
         Object.assign(this, payload);
     }
 
+    withdraw(amount:number):boolean{
+        if(amount > this.balance)
+            return false;
+
+        this.balance-=amount;
+        return super.withdraw(amount);
+    }
+
 }
 

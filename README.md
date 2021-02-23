@@ -1,8 +1,18 @@
 # AcmeApp - small part of a banking system
 Front-end Developer Assessment (ABSA)
 
+## Testing that the project meets the Business Rules
+Ensure you are in the acmeApp directory.
+
+Run `ng test`. This will open a window with output on tests undertaken on your default browser. 
+
+Check the descriptions tagged as `#Business Rules`.
+
 ## Running the project
 Ensure you are in the acmeApp directory.
+
+Install the dependencies using the command `npm install` from your terminal.
+
 Run `npm start` or `ng serve -o` from your terminal. This will open the application on your default web browser.
 
 Alternatively
@@ -53,4 +63,3 @@ in a live environment.
 
 ## Working Output
 ![Sample Output](https://github.com/sluchacha/acmeApp/blob/master/Sample%20Output.png)
-

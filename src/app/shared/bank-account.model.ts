@@ -1,6 +1,6 @@
 import { IBankAccount } from "./ibank-account.interface";
 
-export class BankAccount implements IBankAccount {
+export abstract class BankAccount implements IBankAccount {
     account_number:number = 0;
     account_type:string = '';
     balance:number = 0;
@@ -8,9 +8,6 @@ export class BankAccount implements IBankAccount {
     constructor(payload: Partial<BankAccount>){}
         
     withdraw(amount:number):boolean{
-        if(amount > this.balance)
-            return false;
-
         this.balance-=amount;
         return true;
     }

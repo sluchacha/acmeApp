@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BsModalRef } from 'ngx-bootstrap/modal';
 
 import { WithdrawFormComponent } from './withdraw-form.component';
 
@@ -8,7 +10,13 @@ describe('WithdrawFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WithdrawFormComponent ]
+      declarations: [ WithdrawFormComponent ],
+      imports: [
+        ReactiveFormsModule
+      ],
+      providers: [
+        BsModalRef
+      ]
     })
     .compileComponents();
   });
